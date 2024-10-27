@@ -21,11 +21,11 @@ Serving the HTML pages.
 ### Step 5:
 Testing the webserver.
 
-## PROGRAM:
-'''
+## PROGRAM:rom http.server import HTTPServer,BaseHTTPRequestHandler
+
+
 
 from http.server import HTTPServer,BaseHTTPRequestHandler
-
 content='''<html>
 <head>
 <title> My Web Server</title>
@@ -33,32 +33,33 @@ content='''<html>
 <body>
     <center><table border="10" cellpadding="30">
         <caption><h3>MY SYSTEM CONFIGURATION</caption></h3>
-        <tr bgcolor="yellow" style="color:black;">
-          <th bgcolor="antiquewhite">S.no</th><th>Item</th><th>value</th>
+        <tr bgcolor="blue" style="color:black;">
+          <th bgcolor="green">S.no</th><th>Item</th><th>value</th>
         </tr>
-        <tr bgcolor="antiquewhite" style="color:black;">
-          <th bgcolor="yellow" style="color:black;"> 1</td><th>OS Name</th><th>Microsoft Windows 10 Pro</th>
+        <tr bgcolor="green" style="color:black;">
+          <th bgcolor="blue" style="color:black;"> 1</td><th>OS Name</th><th>Microsoft Windows 10 Pro</th>
         </tr>
-        <tr bgcolor="antiquewhite" style="color:black;">
-            <th bgcolor="yellow" style="color:black;">2</th><th>system manufacturer</th><th>HP</th>
+        <tr bgcolor="green" style="color:black;">
+            <th bgcolor="blue" style="color:black;">2</th><th>system manufacturer</th><th>LenovoP</th>
           </tr>
-          <tr bgcolor="antiquewhite" style="color:black;">
-            <th bgcolor="yellow" style="color:black;">3</th><th>system model</th><th>elite book 840 g3</th>
+          <tr bgcolor="green" style="color:black;">
+            <th bgcolor="blue" style="color:black;">3</th><th>system model</th><th>Thinkpad gen 1</th>
           </tr>
-          <tr bgcolor="antiquewhite" style="color:black;">
-            <th bgcolor="yellow" style="color:black;">4</th><th>Ram</th><th>8 GB DDR4</th>
+          <tr bgcolor="green" style="color:black;">
+            <th bgcolor="blue" style="color:black;">4</th><th>Ram</th><th>16 gb</th>
           </tr>
-          <tr bgcolor="antiquewhite" style="color:black;">
-            <th bgcolor="yellow" style="color:black;">5</th><th>Processor</th><th>intel i5 6th gen</th>
+          <tr bgcolor="green" style="color:black;">
+            <th bgcolor="blue" style="color:black;">5</th><th>Processor</th><th>intel i5 </th>
           </tr>
-          <tr bgcolor="antiquewhite" style="color:black;">
-            <th bgcolor="yellow" style="color:black;">6</th><th>SSD</th><th>256 GB</th>
+          <tr bgcolor="greenpython" style="color:black;">
+            <th bgcolor="blue" style="color:black;">6</th><th>SSD</th><th> 512 GB</th>
           </tr>
         </center>
 
 </body>
 </html>'''
 
+        
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
